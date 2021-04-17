@@ -1,0 +1,13 @@
+version: '2'
+services :
+  yt-dl:
+    environment:
+      - EXEC_SHELL
+      - YT_DL=1
+      - YT_DL_OPTS
+    volumes:
+      - ./YT:/yt
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: jb/youtube-dl
