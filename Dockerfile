@@ -1,6 +1,5 @@
 FROM alpine:edge
 RUN apk update && \
-    apk add bash && \
     apk add ffmpeg && \
     apk add ffmpeg-libs && \
     apk add youtube-dl
